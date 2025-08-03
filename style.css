@@ -6,7 +6,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'Poppins', sans-serif;
+  font-family: 'El Messiri', sans-serif;
 }
 
 html{
@@ -38,7 +38,7 @@ header{
 
 .logo{
     font-size: 3rem;
-    color: #b74b4b;
+    color:rgba(141, 54, 100, 0.868);
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -59,8 +59,8 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color: #b74b4b;
-    border-bottom: 3px solid #b74b4b;
+    color:rgba(141, 54, 100, 0.868);
+    border-bottom: 3px solid rgba(141, 54, 100, 0.868);
 }
 p{
     line-height: 2; 
@@ -73,8 +73,8 @@ p{
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #b74b4b;
-        border-bottom: 3px solid #b74b4b;
+        border-left: 3px solid rgba(141, 54, 100, 0.868);
+        border-bottom: 3px solid rgba(141, 54, 100, 0.868);
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: #161616;
@@ -95,7 +95,7 @@ p{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
+        border-bottom: 0.5rem solid rgba(141, 54, 100, 0.868);
     }
 }
 
@@ -119,7 +119,7 @@ section{
 }
 
 span{
-    color: #b74b4b;
+    color: rgba(141, 54, 100, 0.868);
 }
 
 .home-content h3{
@@ -132,45 +132,6 @@ span{
     font-size: 1.6rem;
 }
 
-.home-img{
-    border-radius: 50%;
-}
-
-.home-img img{
-    position: relative;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #b74b4b;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: transparent;
-    border: 0.2rem solid #b74b4b;
-    font-size: 2rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: #b74b4b;
-}
-
-.social-icons a:hover{
-    color: black;
-    transform: scale(1.3) translateY(-5px);
-    background-color: #b74b4b;
-    box-shadow: 0  0 25px #b74b4b;
-}
 
 .btn{
     display: inline-block;
@@ -178,19 +139,19 @@ span{
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #b74b4b;
+    color: rgba(141, 54, 100, 0.868);
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid #b74b4b;
+    border: 2px solid rgba(141, 54, 100, 0.868);
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .btn:hover{
     transform: scale3d(1.03);
-    background-color: #b74b4b;
+    background-color: rgba(141, 54, 100, 0.868);
     color: black;
-    box-shadow: 0 0 25px #b74b4b;
+    box-shadow: 0 0 25px rgba(141, 54, 100, 0.868);
 }
 
 .typing-text {

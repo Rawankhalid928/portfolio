@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تواصل معي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: black;
+      color: white;
+  font-family: 'El Messiri', sans-serif;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      font-size: 3.5rem;
+      color: rgba(141, 54, 100, 0.9);
+      margin-bottom: 2rem;
+    }
+
+    .contact-info {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(183, 75, 75, 0.3);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-info p {
+      font-size: 1.8rem;
+      margin: 1.5rem 0;
+      color: #ccc;
+    }
+
+    .contact-info span {
+      color: rgba(141, 54, 100, 0.9);
+      font-weight: bold;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(141, 54, 100, 0.9);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.8rem;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(141, 54, 100, 0.7);
+      z-index: 100;
+    }
+
+    .back-button:hover {
+      background-color: white;
+      color: rgba(141, 54, 100, 0.9);
+    }
+
+    @media (max-width: 768px) {
+      h2 { font-size: 2.5rem; }
+      .contact-info p { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="back-button" onclick="history.back()">
+    <i class="fas fa-undo-alt"></i>
+  </button>
+
+  <h2>تواصل معي</h2>
+
+  <div class="contact-info">
+    <p><span>رقم الجوال:</span> 0565054397</p>
+    <p><span>البريد الإلكتروني:</span> rawankhalid928@hotmail.com</p>
+  </div>
+
+</body>
+</html>

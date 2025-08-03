@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مهاراتي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  font-family: 'El Messiri', sans-serif;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    h3 {
+      font-size: 4rem;
+      color: rgba(141, 54, 100, 0.868);
+      margin-bottom: 3rem;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .skill {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(141, 54, 100, 0.4);
+      font-size: 1.8rem;
+      min-width: 200px;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: scale(1.05);
+      background-color: #2a2a2a;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(141, 54, 100, 0.9);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.8rem;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(141, 54, 100, 0.7);
+      z-index: 100;
+    }
+
+    .back-button:hover {
+      background-color: white;
+      color: rgba(141, 54, 100, 0.9);
+    }
+
+    @media (max-width: 768px) {
+      h3 {
+        font-size: 3rem;
+      }
+      .skill {
+        font-size: 1.6rem;
+        min-width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- زر الرجوع -->
+  <button class="back-button" onclick="window.location.href='index.html'">
+<i class="fas fa-undo-alt"></i>
+  </button>
+
+  <h3>مهاراتي</h3>
+
+  <div class="skills-list">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">PHP</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">Flutter</div>
+    <div class="skill">Java</div>
+    <div class="skill">Git & GitHub</div>
+  </div>
+
+</body>
+</html>

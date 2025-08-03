@@ -119,12 +119,7 @@ transform: scale(0.2);
         overflow-x: hidden;
 
   }
-    .typing-text {
-  animation: none !important;
-  width: auto;
-  white-space: normal;
-  border-left: none !important;
-  }
+
 }
 
 

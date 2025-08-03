@@ -19,22 +19,24 @@ body{
     overflow-x: hidden;
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 
-header{
-    margin-top: 20px;
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
+    padding: 1rem 5%;
+    background-color: black;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* ✅ يخلّي العناصر تنزل */
     z-index: 100;
 }
+
 
 .logo{
     font-size: 3rem;
@@ -66,38 +68,60 @@ p{
     line-height: 2; 
 }
 
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid rgba(141, 54, 100, 0.868);
-        border-bottom: 3px solid rgba(141, 54, 100, 0.868);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-    }
+@media (max-width: 995px) {
+  .logo {
+    display: none;
+  }
 
-    nav.active{
-        display: block;
-    }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
 
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
+  nav a {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+  }
 
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid rgba(141, 54, 100, 0.868);
-    }
+  nav a:hover,
+  nav a.active {
+    border-bottom: 2px solid rgba(141, 54, 100, 0.868);
+  }
+
+  .home {
+    flex-direction: column;
+    margin: 10rem 2rem 2rem; /* ✅ نزّل المحتوى أكثر عشان ما يتداخل مع القائمة */
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.2rem;
+  }
+
+  .home-content p {
+    font-size: 1.3rem;
+  }
+    .home {
+    transform: scale(0.7); /* ✅ يصغر الحجم بنسبة 80% */
+  }
+  .header{
+transform: scale(0.2);
+  }
+  body{
+        overflow-x: hidden;
+
+  }
 }
+
+
 
 section{
     min-height: 100vh;
